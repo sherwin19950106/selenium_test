@@ -48,3 +48,5 @@ for res in ress:
     cds = res.find_element_by_class_name('cds').text.replace('\n', '--')
     ls = res.find_element_by_class_name('ls').text.replace('\n', '/')
     print(f'{title}|{cdz}|{cds}|{ls}|')
+driver.save_screenshot('12306.png')
+driver.quit()
